@@ -4,7 +4,7 @@ from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchElementException
 import time
 
-DF_NEWS_LINK = "../data/BID.csv"
+DF_NEWS_LINK = "../data/CTG.csv"
 
 def init_driver():
     options = webdriver.EdgeOptions()
@@ -49,4 +49,4 @@ for i, url in enumerate(df['URL']):
         df['content'].at[i] = content
 
 # Save df wwith content 
-df.to_csv("../data/BID_with_content.csv", index=False)
+df.to_csv("../data/CTG_with_content.csv", index=False)
