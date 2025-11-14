@@ -72,8 +72,8 @@ def crawl_data(url, num_pages):
     return pd.DataFrame(data)
 
 
-URL = "https://cafef.vn/du-lieu/hose/bid-ngan-hang-thuong-mai-co-phan-dau-tu-va-phat-trien-viet-nam.chn"
+URL = "https://cafef.vn/du-lieu/hose/ctg-ngan-hang-thuong-mai-co-phan-cong-thuong-viet-nam.chn"
 df = crawl_data(URL, 200)
 # Save csv file 
-df.to_csv("../data/BID.csv")
+df.to_csv("../data/CTG.csv")
 print("Done!")
